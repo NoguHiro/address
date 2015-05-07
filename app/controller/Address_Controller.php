@@ -13,13 +13,6 @@ class Address_Controller
     {
         $mAddress = new Address();
         $addresses = $mAddress->findAll();
-//        foreach (range(0, 50) as $i) {
-//            $mAddress->insert([
-//                'name' => 'ゆうま' . $i,
-//                'address' => '相模原市南区ゆうま' . $i,
-//                'tel' => '090-1205-ゆうま' .$i
-//            ]);
-//        }
         View::load('index', compact('addresses'));
     }
 
